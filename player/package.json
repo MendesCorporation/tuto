@@ -1,0 +1,39 @@
+{
+  "name": "tuto-player",
+  "version": "1.0.0",
+  "description": "Interactive demo player for internal recordings",
+  "main": "./dist-lib/tuto-player.umd.js",
+  "module": "./dist-lib/tuto-player.es.js",
+  "types": "./dist-lib/types/lib.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist-lib/tuto-player.es.js",
+      "require": "./dist-lib/tuto-player.umd.js"
+    }
+  },
+  "files": ["dist-lib"],
+  "peerDependencies": {
+    "framer-motion": ">=10",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:lib": "tsc --declaration --emitDeclarationOnly --outDir dist-lib/types && vite build --config vite.config.lib.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^10.18.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  }
+}
