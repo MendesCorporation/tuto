@@ -1,0 +1,23 @@
+{
+  "name": "tuto-player",
+  "version": "1.0.0",
+  "description": "Interactive demo player — embed recorded demos in any React app",
+  "main": "./player/dist-lib/tuto-player.umd.js",
+  "module": "./player/dist-lib/tuto-player.es.js",
+  "types": "./player/dist-lib/types/lib.d.ts",
+  "exports": {
+    ".": {
+      "import": "./player/dist-lib/tuto-player.es.js",
+      "require": "./player/dist-lib/tuto-player.umd.js"
+    }
+  },
+  "files": ["player/dist-lib"],
+  "peerDependencies": {
+    "framer-motion": ">=10",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "scripts": {
+    "prepare": "cd player && npm install && npm run build:lib"
+  }
+}
