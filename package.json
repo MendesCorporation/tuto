@@ -17,7 +17,5 @@
     "react": ">=18",
     "react-dom": ">=18"
   },
-  "scripts": {
-    "prepare": "cd player && npm install && npm run build:lib"
-  }
+  "scripts": {}
 }
