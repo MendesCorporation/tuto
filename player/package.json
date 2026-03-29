@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "build:lib": "tsc --declaration --emitDeclarationOnly --outDir dist-lib/types && vite build --config vite.config.lib.ts",
+    "build:lib": "tsc --project tsconfig.lib.json && vite build --config vite.config.lib.ts",
     "preview": "vite preview"
   },
   "dependencies": {
