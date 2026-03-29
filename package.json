@@ -7,6 +7,7 @@
   "types": "./player/dist-lib/types/lib.d.ts",
   "exports": {
     ".": {
+      "types": "./player/dist-lib/types/lib.d.ts",
       "import": "./player/dist-lib/tuto-player.es.js",
       "require": "./player/dist-lib/tuto-player.umd.js"
     }
